@@ -9,6 +9,10 @@ public class TravelPackage {
 			@GeneratedValue(strategy = GenerationType.IDENTITY)
 			private int id;
 			
+
+			private String description;
+			private double price;
+			private int avilavleSeats;
 			public TravelPackage() {
 				super();
 				// TODO Auto-generated constructor stub
@@ -44,8 +48,5 @@ public class TravelPackage {
 			public void setAvilavleSeats(int avilavleSeats) {
 				this.avilavleSeats = avilavleSeats;
 			}
-			private String description;
-			private double price;
-			private int avilavleSeats;
 			
 }
