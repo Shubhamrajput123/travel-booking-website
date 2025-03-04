@@ -20,7 +20,7 @@ import com.travel.travelBooking.services.TravlerService;
 public class TravelerController {
 		@Autowired
 		private TravlerService travlerService;
-		@PostMapping("/savetraveler")
+		@PostMapping("/savet")
 		public Traveler addTraveler(@RequestBody Traveler trav) {
 			return travlerService.saveTravler(trav);
 		}
@@ -34,7 +34,7 @@ public class TravelerController {
 		public List<Traveler> findAllTraveler(){
 			return travlerService.findAll();
 		}
-		@PutMapping("/updatetraveler")
+		@PutMapping("/updatetraveler/{id}")
 		public Traveler updateTravelerById(@PathVariable Integer id,@RequestBody Traveler trav) {
 			return travlerService.updateById(id, trav);
 			

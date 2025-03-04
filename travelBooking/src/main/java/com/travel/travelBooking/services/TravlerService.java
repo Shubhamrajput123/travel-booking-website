@@ -36,7 +36,6 @@ public class TravlerService {
 				Traveler traveler = travelRepo.findById(id).orElse(null);
 				if(traveler != null) {
 					traveler.setName(trav.getName());
-					traveler.setId(trav.getId());
 					traveler.setPh(trav.getPh());
 					traveler.setAdhar(trav.getAdhar());
 					return travelRepo.save(traveler);

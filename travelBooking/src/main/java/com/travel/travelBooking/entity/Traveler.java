@@ -3,7 +3,7 @@ package com.travel.travelBooking.entity;
 import jakarta.persistence.*;
 
 @Entity
-
+@Table(name="travel_booking")
 public class Traveler {
 		@Id 
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,7 +14,7 @@ public class Traveler {
 		private long ph;
 		@Column 
 		private long adhar;
-			public int getId() {
+		public int getId() {
 			return id;
 		}
 		public void setId(int id) {

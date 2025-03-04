@@ -12,17 +12,17 @@ public class TravelPackage {
 
 			private String description;
 			private double price;
-			private int avilavleSeats;
+			private int avilableSeats;
 			public TravelPackage() {
 				super();
 				// TODO Auto-generated constructor stub
 			}
-			public TravelPackage(int id, String description, double price, int avilavleSeats) {
+			public TravelPackage(int id, String description, double price, int avilableSeats) {
 				super();
 				this.id = id;
 				this.description = description;
 				this.price = price;
-				this.avilavleSeats = avilavleSeats;
+				this.avilableSeats = avilableSeats;
 			}
 			public int getId() {
 				return id;
@@ -43,10 +43,10 @@ public class TravelPackage {
 				this.price = price;
 			}
 			public int getAvilavleSeats() {
-				return avilavleSeats;
+				return avilableSeats;
 			}
-			public void setAvilavleSeats(int avilavleSeats) {
-				this.avilavleSeats = avilavleSeats;
+			public void setAvilavleSeats(int avilableSeats) {
+				this.avilableSeats = avilableSeats;
 			}
 			
 }
